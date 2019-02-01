@@ -45,10 +45,6 @@ class Student
     student
   end
   
-  def self.new_from_db(row)
-    
-  end
-  
   def update
     sql = <<-SQL
       UPDATE students
@@ -62,6 +58,8 @@ class Student
     student = self.new(row[0], row[1], row[2])
     student
   end
+  
+  
 
 
 end
